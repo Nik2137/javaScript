@@ -169,8 +169,113 @@ console.log("a ** b =", a ** b);//10^2 = 100 */
 // let result =`@${userNum}${userNum.length}`;
 // console.log(result);
 
-let names = ["nikhil","Nikita","omkar","vinay"];
+//array in js for loop 
 
-for (let idx = 0; idx < names.length; idx++){
-    console.log(names[idx]);
+ //let names = ["nikhil","Nikita","omkar","vinay"];
+
+// for (let idx = 0; idx < names.length; idx++){
+//     console.log(names[idx]);
+// }
+
+
+//for of loop 
+
+// for(let el of names){
+//     console.log(el.toUpperCase());
+// }
+
+
+//sum of array and avg 
+
+// let marks = [85,97,44,37,76,60];
+// let sum = 0;
+
+// for (let val of marks){
+
+//    // sum = sum + val;
+//    sum += val
+
+// }
+
+// let avg = sum/marks.length;
+// console.log(`avg mark of the class = ${avg} `);
+
+
+
+// let items = [250, 645 , 300 , 900 , 50]
+ 
+// // let idx = 0;
+// // for (let val of items){
+// //     console.log(`value of index ${idx} = ${val}`);
+// //     let offer = val/10;
+// //     items[idx] = items[idx] - offer;
+// //     console.log(`value after offer = ${items[idx]}`)
+
+// //     idx++;
+// // }
+
+// for (let i = 0 ; i < items.length ; i++){
+
+//     let offer = items[i] / 10;
+//     items[i] -= offer;
+// }
+// console.log(items);
+
+// array push method 
+
+// let num = [2,3,4,5,6,7];
+
+//num.push(8,9,10);
+
+// //pop method 
+// console.log(num);
+
+// let deletedIteam = num.pop();
+// console.log(num);
+// console.log("Deleted" , deletedIteam);
+
+//toSting method 
+
+// console.log(num);
+// console.log(num.toString());
+
+
+//let num = [1,2,3,4,5,6,7];
+
+//change elemenet 
+//num.splice(2,2,101,102);
+
+//add Element 
+//num.splice(2,0,101);
+
+//delete Element
+//num.splice(3, 1);
+//console.log(num);
+
+//function
+
+// function myFuction(){
+//     console.log("dwiqodniwq");
+//     console.log("dnkqenbfdjbqm x");
+// }
+
+// myFuction();
+
+
+//Arrow Function
+//   let arrowSum = (a,b) =>{
+//     //console.log(a+b);
+//     return a+b;
+// }
+
+
+function countVowels(str){
+  let count = 0;
+    for(const char of str){
+
+        if(char === "a" || char === "e" || char === "i" || char === "o" || char === "u"){
+            count++;
+        }
+    }
+    console.log(count);
 }
