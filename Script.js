@@ -165,6 +165,12 @@ console.log("a ** b =", a ** b);//10^2 = 100 */
 //  console.log(newstre);
 
 
-let userNum = prompt("Enter your Name :");
-let result =`@${userNum}${userNum.length}`;
-console.log(result);
+// let userNum = prompt("Enter your Name :");
+// let result =`@${userNum}${userNum.length}`;
+// console.log(result);
+
+let names = ["nikhil","Nikita","omkar","vinay"];
+
+for (let idx = 0; idx < names.length; idx++){
+    console.log(names[idx]);
+}
