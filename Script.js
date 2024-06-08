@@ -269,13 +269,39 @@ console.log("a ** b =", a ** b);//10^2 = 100 */
 // }
 
 
-function countVowels(str){
-  let count = 0;
-    for(const char of str){
+// function countVowels(str){
+//   let count = 0;
+//     for(const char of str){
 
-        if(char === "a" || char === "e" || char === "i" || char === "o" || char === "u"){
-            count++;
-        }
-    }
-    console.log(count);
+//         if(char === "a" || char === "e" || char === "i" || char === "o" || char === "u"){
+//             count++;
+//         }
+//     }
+//     console.log(count);
+// }
+
+
+// let frist = document.querySelector("p");
+// console.dir(frist);
+
+// let allEl=document .querySelectorAll("p");
+// console.dir(allEl);
+
+// let h2 = document.querySelector("h2");
+// console.dir(h2.innerText);
+
+
+// h2.innerText = h2.innerText + "from apna college students"
+
+let divs = document.querySelectorAll(".box");
+
+let inx =1;
+for(div of divs){
+
+    div.innerText = `new unique value ${inx}`;
+    inx++;
 }
+
+divs[0].innerText = "new unique value 1";
+
+divs[1].innerText = "new unique value 2";
