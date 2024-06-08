@@ -293,15 +293,149 @@ console.log("a ** b =", a ** b);//10^2 = 100 */
 
 // h2.innerText = h2.innerText + "from apna college students"
 
-let divs = document.querySelectorAll(".box");
+// let divs = document.querySelectorAll(".box");
 
-let inx =1;
-for(div of divs){
+// let inx =1;
+// for(div of divs){
 
-    div.innerText = `new unique value ${inx}`;
-    inx++;
-}
+//     div.innerText = `new unique value ${inx}`;
+//     inx++;
+// }
 
-divs[0].innerText = "new unique value 1";
+// divs[0].innerText = "new unique value 1";
 
-divs[1].innerText = "new unique value 2";
+// divs[1].innerText = "new unique value 2";
+
+//DOM attribute
+
+// let div = document.querySelector("div");
+// console.log(div);
+
+// let id = div.getAttribute("id");
+// console.log(id);
+
+// let name = div.getAttribute("name");
+// console.log(name);
+
+// let para =document.querySelector("p");
+// console.log(para.getAttribute("class"));
+
+
+// let para1 =document.querySelector("p");
+// console.log(para1.setAttribute("class",123));
+
+// let div = document.querySelector("div");    
+
+// div.style.backgroundColor = "green";
+// div.style.fontSize = "25px";
+// div.innerText="Hello";
+
+
+//create new element using js 
+
+// let newBtn = document.createElement("button");
+// newBtn.innerText = "click me";
+// console.log(newBtn);
+
+// let div = document.querySelector("div");
+// div.append(newBtn);
+// div.prepend(newBtn);
+// div.before(newBtn);
+// div.after(newBtn);
+
+// let p = document.querySelector("p");
+// p.after(newBtn);
+
+// //q1
+// let newBtn = document.createElement("button");
+// newBtn.innerText = "Click me!";
+
+// newBtn.style.backgroundColor = "red";
+// newBtn.style.color = "white";
+
+//  document.querySelector("body").prepend(newBtn);
+
+// //q2
+
+// let para= document.querySelector("p");
+
+let btn1 = document.querySelector("#btn1");
+
+// btn1.onclick =(e) =>{
+// console.log(e);
+// console.log(e.type);        
+
+//     // console.log(`btn1 was clicked`);
+//     // let a = 10;
+//     // a++;
+//     // console.log(a);
+// };
+
+// btn1.addEventListener("click", ()=>{
+//     console.log("btn1 was clicked")
+// });
+
+// btn1.addEventListener("click", ()=>{
+//     console.log("btn1 was clicked -2 handlar")
+// });
+
+// const handlar3 = ()=>{
+//     console.log("btn1 was clicked -3 handlar")
+// };
+
+// btn1.addEventListener("click", handlar3);
+
+// btn1.addEventListener("click", ()=>{
+//     console.log("btn1 was clicked -4 handlar")
+// });
+
+
+// btn1.removeEventListener("click" ,handlar3);
+
+// let div = document.querySelector("div");
+
+
+let modeBtn = document.querySelector("#mode");
+let currMode = "light";
+let body = document.querySelector("body");
+
+
+
+modeBtn.addEventListener("click", () => {
+
+    if(currMode === "light"){
+        currMode = "dark";
+            
+        body.classList.add("dark");
+        body.classList.remove("light");    
+
+        }
+        else{
+            currMode = "light";   
+           
+        body.classList.remove("dark");
+        body.classList.add("light");    
+
+            
+        }
+
+        console.log(currMode); 
+});
+
+let para = document.querySelector("p");
+let box = document.querySelector("div");
+  box.addEventListener("mouseover",()=>{
+    box.innerText ="box is open";
+    
+    para.style.backgroundColor = "green";
+    
+});
+
+box.addEventListener("mouseleave" , ()=>{
+    box.innerText ="box is close";
+    para.style.backgroundColor = "white";
+})
+
+
+
+

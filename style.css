@@ -1,8 +1,28 @@
-.box{
+/* .content{
+    color: blueviolet;
+}
+
+.newClass{
+    background-color: darkgreen;
+} */
+
+ div{
     height: 100px;
     width: 100px;
+    background-color: aqua;
+    color: black;
     border: 1px solid black;
-    margin: 5px;
-    text-align: center;
-    background-color: aquamarine;
+} 
+
+.dark {
+    background-color: dimgrey;
+    color: white;
+
+}
+
+.light{
+    background-color: white;
+    color: black;
+
+
 }
